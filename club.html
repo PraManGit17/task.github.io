@@ -1,67 +1,115 @@
 <!DOCTYPE html>
 <head>
     <meta name="viewport" content="width-device-width, intial-scale= 1.0">
-
+    
    <style>
+.body{background:black;}
+
+.h1{position:relative;top:100px;}
+.h2{position:relative;bottom:70px;}
+.h3{position:relative;bottom:1200px;}
+.h4{position:relative;bottom:1190px;}
+
+
+.p 
+{position:relative;left:120px;top:120px;font-size:80px;font-family:"Times New Roman", Times, serif; display:inline-block;
+}
+
+.px {
+     text-shadow:
+    0 0 7px  black,
+    0 0 10px black,
+    0 0 21px white,
+    0 0 42px white,
+    0 0 82px white,
+    0 0 92px white,
+    0 0 89px white;}
+
    
-.PM
-{color:white;position:relative;left:30px;font-size:40px;font-family:"Times New Roman", Times, serif;display:inline-block;
-  text-shadow:
-    0 0 7px  #fff,
-    0 0 10px #fff,
-    0 0 21px #fff,
-    0 0 42px #0fa,
-    0 0 82px #0fa,
-    0 0 92px #0fa,
-    0 0 89px #0fa;}
+.py {color: red;
+     text-shadow:
+    0 0 7px  black,
+    0 0 10px black,
+    0 0 21px red,
+    0 0 42px red,
+    0 0 82px red,
+    0 0 92px red,
+    0 0 89px red;}
+     
+    
+
+
+
+.p1
+{color:white;position:relative;left:1000px;font-size:80px;font-family:"Times New Roman", Times, serif;display:inline-block;}
+
+
+.p2{position:relative;left:1500px;bottom:100px;display:inline-block;}
+
+.p3{position:relative;left:1550px;bottom:100px;display:inline-block;}
+
+
+.p4{position:relative;top:200px;left:360px;font-size:200px;font-weight:500;font-family: ;Times New Roman;
+}
+.C{position:relative;left:10px;color:grey;font-size:200px;}
+.O{position:relative;left:10px;color:grey;}
+.D{position:relative;left:10px;color:grey;}
+.E{position:relative;left:10px;color:grey;}
+.dash{position:relative;left:50px;color:white;}
+.X{position:relative;left:10px;color:red;
+     text-shadow:
+    0 0 5px  red,
+    0 0 10px red,
+    0 0 10px red,
+    0 0 10px red,
+    0 0 10px red,
+    0 0 10px red,
+    0 0 15px red;}
+     
+
+
+.image{position:relative;left:270px;bottom:900px;
+        }
+        
+.code{color:grey;position:relative;left:700px;bottom:2000px;font-size:150px;font-family:Copperplate, Papyrus, fantasy;letter-spacing:10px;}
+
+
+
+.p5{color:grey;position:relative;bottom:2300px;left:50px;font-family: cursive;font-size:100px;font-weight:900; 
+}
+
+.p51{color:red;position:relative;bottom:2320px;left:410px;font-family: cursive;font-size:100px;display:inline-block;font-weight:900; 
+}
 
 
 
 
 
-.RESUME
-{color:white;position:relative;left:620px;font-size:35px;font-family:"Times New Roman", Times, serif;display:inline-block;}
+.span{color:white;position:relative;left:680px;bottom:1200px;font-size:100px;font-weight:500}
 
-.LN{display:inline-block;position:relative;left:640px;}
-
-.GIT{display:inline-block;position:relative;left:670px;}
-
-.I{color:grey;position:relative;top:150px;left:10px;font-weight:550;font-size:70px;}
-
-.EXP{color:red;position:relative;left:300px;bottom:300px;font-weight:550;font-size:70px;}
-
-.video{position:relative;left:750px;bottom:950px;height:450px; width:300px;}
-
-.WEB{color:white;position:relative;bottom:600px;font-family: cursive;font-size:40px;}
-
-
-.PROJ{color:white;position:relative;left:500px;bottom:650px;}
-.IMG2{position:relative;left:15px;}
-
-.h3{position:relative;bottom:645px;}
-.h4{position:relative;bottom:645px;}
+.img2{position:relative;left:880px;bottom:2000px}
+ 
 .content{
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-
+  
 }
- .text{position: relative;
-  left:150px;
-  bottom:80px;
-  color:grey;
+.content .code{
+  position: relative;
+  bottom:1800px;
+  left:860px;
+  color: red;
   font-weight: 700;
   font-size: 60px;
-    transform: scale(2);
+  transform: scale(2);
   padding: 30px;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
- .text:before,
- .text:after {
-       padding: 30px;
+.content .code:before,
+.content .code:after {
+  padding: 30px;
   color: black;
   content: attr(data-text);
   position: absolute;
@@ -71,17 +119,19 @@
   overflow: hidden;
   top: 0;
 }
-.text:before{
-    left: 3px;
-  text-shadow: -2px 0 red;
+.content .code:before{
+  left: 3px;
+  text-shadow: -2px 0 black;
   animation: glitch-1 2s linear infinite reverse;
 }
- .text:after{
-     left: -3px;
-  text-shadow: -2px 0 blue;
+.content .code:after{
+  left: -3px;
+  text-shadow: -2px 0 black;
   animation: glitch-2 2s linear infinite reverse;
- }
-  @keyframes glitch-1 {
+}
+
+
+@keyframes glitch-1 {
   0% {
     clip: rect(132px, auto, 101px, 30px);
   }
@@ -146,7 +196,6 @@
     clip: rect(14px, auto, 100px, 30px);
   }
 }
-
 @keyframes glitch-2 {
   0% {
     clip: rect(129px, auto, 36px, 30px);
@@ -212,67 +261,115 @@
     clip: rect(83px, auto, 40px, 30px);
   }
 }
+      
+  
 
-@media screen and (min-width:980px)
+@media screen and (max-width:2000px)
 {
-    .PM
-{color:white;position:relative;left:30px;font-size:40px;font-family:"Times New Roman", Times, serif;display:inline-block;
-  text-shadow:
-    0 0 7px  #fff,
-    0 0 10px #fff,
-    0 0 21px #fff,
-    0 0 42px #0fa,
-    0 0 82px #0fa,
-    0 0 92px #0fa,
-    0 0 89px #0fa;}
+.body{background:black;}
+
+.h1{position:relative;top:70px;}
+.h2{position:relative;top:70px;}
+.h3{position:relative;bottom:1200px;}
+.h4{position:relative;bottom:1110px;}
+
+.p 
+{position:relative;left:120px;top:80px;font-size:150px;font-family:"Times New Roman", Times, serif; display:inline-block;
+}
+
+.px {color:white;
+     text-shadow:
+    0 0 7px  white,
+    0 0 10px white,
+    0 0 21px white,
+    0 0 42px white,
+    0 0 82px white,
+    0 0 92px white,
+    0 0 89px black;}
+
+   
+.py {color: red;
+     text-shadow:
+    0 0 7px  red,
+    0 0 10px red,
+    0 0 21px red,
+    0 0 42px red,
+    0 0 82px red,
+    0 0 92px red,
+    0 0 89px black;}
+     
+    
+
+
+
+.p1
+{color:white;position:relative;left:1000px;top:70px;font-size:120px;font-family:"Times New Roman", Times, serif;display:inline-block;}
+
+
+.p2{position:relative;left:1100px;top:60px;display:inline-block;}
+
+.p3{position:relative;left:1150px;top:60px;display:inline-block;}
+
+
+.p4{position:relative;top:600px;left:250px;font-size:230px;font-weight:500;font-family: Times New Roman;
+}
+.C{position:relative;left:10px;color:grey;font-size:230px;}
+.O{position:relative;left:10px;color:grey;}
+.D{position:relative;left:10px;color:grey;}
+.E{position:relative;left:10px;color:grey;}
+.dash{position:relative;left:50px;color:white;}
+.X{position:relative;left:10px;color:red;
+     text-shadow:
+    0 0 5px  red,
+    0 0 10px red,
+    0 0 10px red,
+    0 0 10px red,
+    0 0 10px red,
+    0 0 10px red,
+    0 0 15px red;}
+     
+
+
+.image{position:relative;left:300px;bottom:710px;
+        }
+        
+.code{color:grey;position:relative;left:550px;bottom:1450px;font-size:180px;font-family:Copperplate, Papyrus, fantasy;letter-spacing:10px;}
+
+
+
+.p5{color:grey;position:relative;bottom:1060px;left:50px;font-family: cursive;font-size:130px;font-weight:900; 
+}
+
+.p51{color:red;position:relative;bottom:1040px;left:300px;font-family: cursive;font-size:130px;display:inline-block;font-weight:900; 
+}
 
 
 
 
 
-.RESUME
-{color:white;position:relative;left:670px;font-size:35px;font-family:"Times New Roman", Times, serif;display:inline-block;}
-
-.LN{display:inline-block;position:relative;left:700px;}
-
-.GIT{display:inline-block;position:relative;left:730px;}
-
-.I{color:grey;position:relative;bottom:700px;font-weight:550;font-size:110px;}
-
-.EXP{color:red;position:relative;left:400px;bottom:1300px;font-weight:550;font-size:110px;}
-
-.video{position:relative;bottom:1000px;left:300px;width:400px;height:450px;}
-
-.WEB{color:white;position:relative;bottom:600px;font-family: cursive;font-size:40px;}
-
-
-.PROJ{color:white;position:relative;left:500px;bottom:650px;}
-.IMG2{position:relative;left:15px;}
-
-.h3{position:relative;bottom:645px;}
-.h4{position:relative;bottom:645px;}
+.span{color:white;position:relative;left:680px;bottom:1200px;font-size:100px;font-weight:500;}
+.img2{position:relative;left:300px;bottom:1080px;}
+ 
 .content{
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-
+  
 }
- .text{position: relative;
- bottom:550px;
- left:-30px;
-  color:grey;
+.content .code{
+  position: relative;
+  bottom:1600px;
+  left:770px;
+  color: red;
   font-weight: 700;
   font-size: 90px;
-    transform: scale(2);
+  transform: scale(2);
   padding: 30px;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-
- .text:before,
- .text:after {
+.content .code:before,
+.content .code:after {
   padding: 30px;
   color: black;
   content: attr(data-text);
@@ -283,17 +380,19 @@
   overflow: hidden;
   top: 0;
 }
-.text:before{
-    left: 3px;
-  text-shadow: -2px 0 red;
+.content .code:before{
+  left: 3px;
+  text-shadow: -2px 0 black;
   animation: glitch-1 2s linear infinite reverse;
 }
- .text:after{
-     left: -3px;
-  text-shadow: -2px 0 blue;
+.content .code:after{
+  left: -3px;
+  text-shadow: -2px 0 black;
   animation: glitch-2 2s linear infinite reverse;
- }
-  @keyframes glitch-1 {
+}
+
+
+@keyframes glitch-1 {
   0% {
     clip: rect(132px, auto, 101px, 30px);
   }
@@ -423,62 +522,89 @@
     clip: rect(83px, auto, 40px, 30px);
   }
 }
-}
+      
+  
 
+    
+}
+ 
+
+
+ 
 </style>
+
 </head>
 
-<body bgcolor="black">
-
-
-    <br><br>
-<hr color="grey" width="1100px" size="10%">
-  <i class="PM">PM</i>
-
- <x class="RESUME">RESUME</x>
-
-  <a href="https://in.linkedin.com/in/pratham-manjrekar-821b61291" class="LN"><img src="LN.png" height="40px" border></a>
-  
-
-  <a href="https://github.com/PraManGit17/static.github.io.git" class="GIT"><img src="GIT.png" height="40px" border></a>
-
-  <hr color="grey" width="1100px" size="10%">
-  
-  
-  
-
-
-
-
-<span class="I"><b><i>  I Create </b></i></span>
-  <br>
-
-  <span class="content">
-
- <i> <span class="text" data-text="PLAYFUL">PLAYFUL</span></i>
-
-  </span>
-  
-   <span class="EXP"><b><i>Experiences.</i></b></span>
-
-<video src="VN.mp4" autoplay loop="-1"class="video" poster="image.png" controls >
+<body class="body">
     
-</video>
+    <br><br>
+    
+<hr color="grey" width="2200px" size="20%" class="h1">
 
+  <i class="p">
+      <span class="px">C</span>
+      <span class="py">X</span>
+  </i>
   
-<p class="WEB">
- <font color="white">Pratham Manjrekar</font> / 
-  <font color="red">Software Developer</font> 
+ <x class="p1">RESUME</x>
+ 
+  <a href="https://in.linkedin.com/in/pratham-manjrekar-821b61291" class="p2"><img src="LN.png" height="80px" border></a>
+  
+  <a href="https://github.com/PraManGit17/static.github.io.git" class="p3"><img src="GIT.png" height="80px" border></a>
+ 
+<hr color="grey" width="2200px" size="20%" class="h2">
+ 
+  
+  <br> <br>
+  
+<p class="p4">
+    <span class="C">C</span><br>
+    <span class="O">O</span><br>
+    <span class="D">D</span><br>
+    <span class="E">E</span><br>
+    <span class="dash">-</span><br>
+    <span class="X">X</span><br>
+  </p>
+  
+<p class="image"> 
+
+  <img  src="NEW.jpg" height="1600px" width="1550px" class="image">
+      
+ 
 </p>
 
-<br><br>  <br><br>  <br><br>
-<hr color="grey" width="1100px" size="10%" class="h3">
-  <span class="PROJ">
-      Projects
-      <br>
-<img src="IMG2.png" height="15px" class="IMG2">
+<p class="code">
+ 
+    IT's     IN <br>
+    
+   <div class="content">
+       
+ <span class="code" data-text="CODING....">
+            CODING....
+</span>
+              
+ </div>
+</p>    
+<br>
 
-  </span>
-<hr color="grey" width="1100px" size="10%" class="h4">
+<section class="s1">
+ <span class="p5">Pratham  </span>
+  <span class="p51">Manjrekar</span>
+  </section>
+  
+    <br><br>  <br><br>
+
+<hr color="grey" width="2200px" class="h3" size="20%">
+ <span class="span">
+     PROJECTS
+     
+</span>
+<img src="IMG2.png" height="80px"
+ class="img2">
+<hr color="grey" width="2200px" class="h4" size="20%">    
+
+  
 </body>
-    </html> 
+ 
+
+    </html>
